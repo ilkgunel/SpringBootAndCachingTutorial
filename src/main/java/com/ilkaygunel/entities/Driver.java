@@ -1,9 +1,10 @@
 package com.ilkaygunel.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Driver {
+public class Driver implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

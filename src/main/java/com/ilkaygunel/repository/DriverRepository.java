@@ -10,6 +10,4 @@ import java.util.Optional;
 @Repository
 public interface DriverRepository extends JpaRepository<Driver, Long> {
     Optional<Driver> findByName(String name);
-    @Cacheable("getDriverById")
-    Optional<Driver> findById(Long id);
 }
